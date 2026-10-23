@@ -27,4 +27,4 @@ It's created the first time the plugin loads, and grows as you use the game's ow
 
 Only the **host** needs this mod installed for features 1 and 2 (they're host-authoritative and sync to everyone). Feature 3 only changes what the host is *able to select* in their own menu — once selected, the value is sent to everyone the normal way, so again, only the host needs it installed.
 
-(not associated or endorced by Among Us or Innersloth yadda yadda)
+(not associated or endorsed by Among Us or Innersloth yadda yadda)
