@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <DebugType>embedded</DebugType>
+        <Description>Standalone toggle for the Medbay scan task + adjustable Polus decontamination door timing</Description>
+        <Authors>katzklaw</Authors>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Same package versions confirmed working against the current game build in
+             ApeMV/AmongUsRevamped (verified via reference-repo, per the runtime-vs-compile-time
+             mismatch gotcha with AmongUs.GameLibs.Steam alone). Bump these together if you bump
+             them at all. -->
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735" ExcludeAssets="runtime;native" />
+        <PackageReference Include="AmongUs.GameLibs.Steam" Version="2026.9.29" PrivateAssets="all" />
+        <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="2.1.0-rc.1" PrivateAssets="all" ExcludeAssets="runtime" />
+    </ItemGroup>
+
+    <!-- Optional: set the AmongUs MSBuild property (either in your environment or with
+         -p:AmongUs="C:\path\to\Among Us") to auto-copy the built DLL into BepInEx/plugins
+         after every build, same convention as the other katzklaw standalone mods. -->
+    <Target Name="Copy" AfterTargets="Build" Condition="'$(AmongUs)' != ''">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(AmongUs)/BepInEx/plugins/" UseSymboliclinksIfPossible="true" />
+    </Target>
+</Project>
