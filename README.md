@@ -27,24 +27,4 @@ It's created the first time the plugin loads, and grows as you use the game's ow
 
 Only the **host** needs this mod installed for features 1 and 2 (they're host-authoritative and sync to everyone). Feature 3 only changes what the host is *able to select* in their own menu — once selected, the value is sent to everyone the normal way, so again, only the host needs it installed.
 
-## Building
-
-Requires the .NET 6 SDK. From this folder:
-
-```
-dotnet build -c Release
-```
-
-Optionally pass `-p:AmongUs="C:\path\to\Among Us"` (or set an `AmongUs` environment variable) and the build will automatically copy the built DLL into `BepInEx/plugins/` for you, same convention as your other mods.
-
-Drop `TaskDoorTweaks.dll` into `BepInEx/plugins/` on the **host's** game install if you build it manually instead.
-
-## Why these APIs
-
-Everything this mod touches (`ShipStatus.AddTasksFromList`, `NormalPlayerTask.TaskType`, `DeconSystem.UpdateSystem`, `DeconSystem.DoorOpenTime`/`DeconTime`, `GameOptionsManager.Instance.currentNormalGameOptions.MapId` cast to `MapNames`, `NumberOption.SetUpFromData`/`.Increment`/`.ValidRange`) was verified directly against `ApeMV/AmongUsRevamped`'s own source rather than trusted from the `AmongUs.GameLibs.Steam` NuGet package alone, per the known runtime-vs-compile-time mismatch risk with that package. The settings-unlock approach specifically mirrors `AmongUsRevamped`'s `Patches/NumberOptionsPatch.cs`, which is itself explicitly credited there to the well-known `astra1dev/AUnlocker` mod — this is a widely-used, proven technique, not something invented for this mod. If a future Among Us update renames or removes any of these members, each patch is applied independently so a break in one doesn't take out the others.
-
-## Testing notes
-
-Not yet build-tested against a live game client in this session (no .NET SDK / game assemblies available where it was built) — please run it through your usual build → four-client test loop and report back anything the BepInEx console flags.
-
-One thing worth watching for specifically with feature 3: pushing a setting far outside its vanilla range (e.g. impostor count, which is tied to lobby size elsewhere in the game) may be accepted by the menu widget but still get rejected — or clamped back — by the game's own logic when the match actually starts. That would be the base game's own validation kicking in, not a bug in this mod, but it's the one place where "unlocked" doesn't necessarily mean "guaranteed to work end to end" — worth a quick sanity check in your test loop.
+(not associated or endorsed by Among Us or Innersloth yadda yadda)
