@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute(("Standalone toggle for the Medbay scan task + adjustable Polus decontamination doo" +
     "r timing"))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5c02be220f63b8c7e2bd6cd2eb7ef3b3cabd714")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+939a98d80b27b8f7b59ed79ea0f82e73201e6308")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskDoorTweaks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskDoorTweaks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

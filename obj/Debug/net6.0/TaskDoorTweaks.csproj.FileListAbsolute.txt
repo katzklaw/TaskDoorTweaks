@@ -8,3 +8,4 @@ c:\Users\Admin\Desktop\im makin mods LOL\TaskDoorTweaks\obj\Debug\net6.0\TaskDoo
 c:\Users\Admin\Desktop\im makin mods LOL\TaskDoorTweaks\obj\Debug\net6.0\TaskDoorTweaks.dll
 c:\Users\Admin\Desktop\im makin mods LOL\TaskDoorTweaks\obj\Debug\net6.0\refint\TaskDoorTweaks.dll
 c:\Users\Admin\Desktop\im makin mods LOL\TaskDoorTweaks\obj\Debug\net6.0\ref\TaskDoorTweaks.dll
+c:\Users\Admin\Desktop\im makin mods LOL\TaskDoorTweaks\obj\Debug\net6.0\TaskDoorTweaks.sourcelink.json

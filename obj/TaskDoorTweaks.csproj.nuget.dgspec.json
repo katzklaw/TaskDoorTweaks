@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj": {}
+    "c:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj": {
+    "c:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj",
+        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj",
         "projectName": "TaskDoorTweaks",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj",
+        "projectPath": "c:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\TaskDoorTweaks.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\obj\\",
+        "outputPath": "c:\\Users\\Admin\\Desktop\\im makin mods LOL\\TaskDoorTweaks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
